@@ -1515,7 +1515,7 @@ footer {
 
 /* Dashboard Styles */
 .dashboard-page {
-    background: var(--dark);
+      background-color: #03350f;
 }
 
 .dashboard-header {
@@ -3518,5 +3518,6 @@ footer {
     font-size: 0.8rem;
 
 }
+
 
 
