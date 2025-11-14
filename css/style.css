@@ -25,6 +25,7 @@
 
 body {
     background-color: var(--dark);
+    background-color: #000;
     color: var(--light);
     line-height: 1.6;
     overflow-x: hidden;
@@ -3516,4 +3517,5 @@ footer {
 .feature-subitems i {
     color: var(--secondary);
     font-size: 0.8rem;
+
 }
