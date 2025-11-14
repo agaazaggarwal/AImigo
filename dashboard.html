@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | UP eHRMS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dashboard-page">
+    <div id="particles-js"></div>
+    
+    <!-- Dashboard Header -->
+    <header class="dashboard-header glass">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>UP eHRMS</h1>
+                        <p>Employee Dashboard</p>
+                    </div>
+                </div>
+                
+                <div class="header-actions">
+                    <div class="user-profile">
+                        <div class="user-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="user-info">
+                            <span class="user-name">Alex Johnson</span>
+                            <span class="user-role">Software Engineer</span>
+                        </div>
+                    </div>
+                    <button class="btn-notification">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-badge">3</span>
+                    </button>
+                    <button class="btn-logout">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Dashboard Layout -->
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar glass">
+            <nav class="sidebar-nav">
+                <ul>
+                    <li>
+                        <a href="#" class="active">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-user-circle"></i>
+                            <span>My Profile</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-calendar-check"></i>
+                            <span>Attendance</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-file-invoice-dollar"></i>
+                            <span>Payroll</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>Leave Management</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Performance</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Training</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-cog"></i>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="dashboard-main">
+            <!-- Welcome Section -->
+            <section class="welcome-section">
+                <div class="welcome-content">
+                    <h1>Welcome back, Alex!</h1>
+                    <p>Here's your HR overview for today</p>
+                    <div class="quick-stats">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-calendar-day"></i>
+                            </div>
+                            <div class="stat-info">
+                                <div class="stat-value">15</div>
+                                <div class="stat-label">Days Present</div>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-coins"></i>
+                            </div>
+                            <div class="stat-info">
+                                <div class="stat-value">12</div>
+                                <div class="stat-label">Leave Balance</div>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                            <div class="stat-info">
+                                <div class="stat-value">85%</div>
+                                <div class="stat-label">Performance</div>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-bell"></i>
+                            </div>
+                            <div class="stat-info">
+                                <div class="stat-value">3</div>
+                                <div class="stat-label">Notifications</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Main Dashboard Grid -->
+            <div class="dashboard-grid">
+                <!-- Left Column -->
+                <div class="dashboard-column">
+                    <!-- Attendance Chart -->
+                    <div class="dashboard-card">
+                        <div class="card-header">
+                            <h3>Attendance Overview</h3>
+                            <button class="card-action">
+                                <i class="fas fa-ellipsis-h"></i>
+                            </button>
+                        </div>
+                        <div class="card-content">
+                            <div class="attendance-chart">
+                                <canvas id="attendanceChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Actions -->
+                    <div class="dashboard-card">
+                        <div class="card-header">
+                            <h3>Quick Actions</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="quick-actions-grid">
+                                <button class="action-btn">
+                                    <i class="fas fa-calendar-plus"></i>
+                                    <span>Apply Leave</span>
+                                </button>
+                                <button class="action-btn">
+                                    <i class="fas fa-file-download"></i>
+                                    <span>Download Payslip</span>
+                                </button>
+                                <button class="action-btn">
+                                    <i class="fas fa-user-edit"></i>
+                                    <span>Update Profile</span>
+                                </button>
+                                <button class="action-btn">
+                                    <i class="fas fa-question-circle"></i>
+                                    <span>Get Help</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="dashboard-column">
+                    <!-- Performance Metrics -->
+                    <div class="dashboard-card">
+                        <div class="card-header">
+                            <h3>Performance Metrics</h3>
+                            <button class="card-action">
+                                <i class="fas fa-ellipsis-h"></i>
+                            </button>
+                        </div>
+                        <div class="card-content">
+                            <div class="performance-metrics">
+                                <div class="metric">
+                                    <div class="metric-label">Productivity</div>
+                                    <div class="metric-bar">
+                                        <div class="metric-fill" style="width: 85%"></div>
+                                    </div>
+                                    <div class="metric-value">85%</div>
+                                </div>
+                                <div class="metric">
+                                    <div class="metric-label">Quality</div>
+                                    <div class="metric-bar">
+                                        <div class="metric-fill" style="width: 92%"></div>
+                                    </div>
+                                    <div class="metric-value">92%</div>
+                                </div>
+                                <div class="metric">
+                                    <div class="metric-label">Teamwork</div>
+                                    <div class="metric-bar">
+                                        <div class="metric-fill" style="width: 78%"></div>
+                                    </div>
+                                    <div class="metric-value">78%</div>
+                                </div>
+                                <div class="metric">
+                                    <div class="metric-label">Initiative</div>
+                                    <div class="metric-bar">
+                                        <div class="metric-fill" style="width: 88%"></div>
+                                    </div>
+                                    <div class="metric-value">88%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recent Activities -->
+                    <div class="dashboard-card">
+                        <div class="card-header">
+                            <h3>Recent Activities</h3>
+                            <button class="card-action">
+                                <i class="fas fa-ellipsis-h"></i>
+                            </button>
+                        </div>
+                        <div class="card-content">
+                            <div class="activity-list">
+                                <div class="activity-item">
+                                    <div class="activity-icon success">
+                                        <i class="fas fa-check-circle"></i>
+                                    </div>
+                                    <div class="activity-content">
+                                        <p>Leave application approved</p>
+                                        <span>2 hours ago</span>
+                                    </div>
+                                </div>
+                                <div class="activity-item">
+                                    <div class="activity-icon info">
+                                        <i class="fas fa-info-circle"></i>
+                                    </div>
+                                    <div class="activity-content">
+                                        <p>Payroll processed for March</p>
+                                        <span>1 day ago</span>
+                                    </div>
+                                </div>
+                                <div class="activity-item">
+                                    <div class="activity-icon warning">
+                                        <i class="fas fa-exclamation-triangle"></i>
+                                    </div>
+                                    <div class="activity-content">
+                                        <p>Training completion pending</p>
+                                        <span>2 days ago</span>
+                                    </div>
+                                </div>
+                                <div class="activity-item">
+                                    <div class="activity-icon primary">
+                                        <i class="fas fa-bell"></i>
+                                    </div>
+                                    <div class="activity-content">
+                                        <p>New policy update available</p>
+                                        <span>3 days ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI Assistant -->
+            <section class="ai-assistant-section">
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h3><i class="fas fa-robot"></i> AI HR Assistant</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="ai-chat">
+                            <div class="ai-message">
+                                <div class="message-avatar">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <div class="message-content">
+                                    <p>Hello Alex! I'm your AI HR assistant. How can I help you today?</p>
+                                </div>
+                            </div>
+                            <div class="quick-questions">
+                                <button class="question-btn">Check leave balance</button>
+                                <button class="question-btn">Apply for leave</button>
+                                <button class="question-btn">Payroll query</button>
+                                <button class="question-btn">Update profile</button>
+                            </div>
+                            <div class="chat-input">
+                                <input type="text" placeholder="Ask me anything about HR...">
+                                <button class="send-btn">
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/particles.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

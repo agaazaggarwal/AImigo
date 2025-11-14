@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features | UP eHRMS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+    
+    <!-- Header -->
+    <header class="glass">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>UP eHRMS</h1>
+                        <p>Intelligent HR Platform</p>
+                    </div>
+                </div>
+                
+                <div class="header-actions">
+                    <div class="language-selector glass">
+                        <i class="fas fa-globe"></i>
+                        <select id="languageSelect">
+                            <option value="en">EN</option>
+                            <option value="hi">HI</option>
+                        </select>
+                    </div>
+                    <a href="login.html" class="btn-login">
+                        <i class="fas fa-rocket"></i> Launch Portal
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="glass">
+        <div class="container">
+            <div class="nav-container">
+                <ul class="main-nav">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-code"></i> About</a></li>
+                    <li><a href="services.html"><i class="fas fa-cogs"></i> Services</a></li>
+                    <li><a href="features.html" class="active"><i class="fas fa-bolt"></i> Features</a></li>
+                    <li><a href="#"><i class="fas fa-users"></i> Team</a></li>
+                    <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Features Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="glitch" data-text="Complete Feature Suite">Complete Feature Suite</h1>
+                    <p>Explore our comprehensive set of HR management features designed for modern government workforce</p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="stat-number">20+</div>
+                            <div class="stat-label">Features</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Digital</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Access</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="features-animation">
+                        <div class="feature-orb feature-orb-1">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                        <div class="feature-orb feature-orb-2">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="feature-orb feature-orb-3">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="central-feature">
+                            <i class="fas fa-cogs"></i>
+                            <h4>All Features</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Categories -->
+    <section class="features-categories">
+        <div class="container">
+            <div class="category-nav">
+                <button class="category-btn active" data-category="all">All Features</button>
+                <button class="category-btn" data-category="core">Core HR</button>
+                <button class="category-btn" data-category="attendance">Attendance</button>
+                <button class="category-btn" data-category="performance">Performance</button>
+                <button class="category-btn" data-category="security">Security</button>
+                <button class="category-btn" data-category="analytics">Analytics</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comprehensive Features Grid -->
+    <section class="comprehensive-features">
+        <div class="container">
+            <!-- Employee Management Features -->
+            <div class="feature-category" data-category="core">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h2>Employee Management</h2>
+                    <p>Complete employee lifecycle management from onboarding to retirement</p>
+                </div>
+                <div class="features-grid-detailed">
+                    <div class="feature-item-detailed">
+                        <div class="feature-header">
+                            <div class="feature-icon-detailed">
+                                <i class="fas fa-user-plus"></i>
+                            </div>
+                            <h3>Employee Enrolment</h3>
+                            <span class="feature-badge core">Core HR</span>
+                        </div>
+                        <p>Streamlined digital onboarding process with automated document verification and profile creation</p>
+                        <div class="feature-sub-features">
+                            <div class="sub-feature">
+                                <i class="fas fa-calculator"></i>
+                                <div>
+                                    <h4>Payroll System</h4>
+                                    <p>Automated salary processing with tax calculations and direct deposit</p>
+                                </div>
+                            </div>
+                            <div class="sub-feature">
+                                <i class="fas fa-user-check"></i>
+                                <div>
+                                    <h4>Joining & Relieving</h4>
+                                    <p>Digital workflow for employee joining formalities and exit management</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature-item-detailed">
+                        <div class="feature-header">
+                            <div class="feature-icon-detailed">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <h3>Service Book Management</h3>
+                            <span class="feature-badge core">Core HR</span>
+                        </div>
+                        <p>Complete digital service record management with secure access and verification</p>
+                        <div class="feature-sub-features">
+                            <div class="sub-feature">
+                                <i class="fas fa-graduation-cap"></i>
+                                <div>
+                                    <h4>Training Management</h4>
+                                    <p>Track and manage employee training programs and skill development</p>
+                                </div>
+                            </div>
+                            <div class="sub-feature">
+                                <i class="fas fa-clipboard-check"></i>
+                                <div>
+                                    <h4>ACR Management</h4>
+                                    <p>Digital Annual Confidential Report system with automated workflows</p>
+                                </div>
+                            </div>
+                            <div class="sub-feature">
+                                <i class="fas fa-exchange-alt"></i>
+                                <div>
+                                    <h4>Merit Based Transfer</h4>
+                                    <p>Transparent transfer system based on performance and eligibility</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Performance & Leave Management -->
+            <div class="feature-category" data-category="performance">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h2>Performance & Leave Management</h2>
+                    <p>Comprehensive performance evaluation and leave management system</p>
+                </div>
+                <div class="features-grid-detailed">
+                    <div class="feature-item-detailed">
+                        <div class="feature-header">
+                            <div class="feature-icon-detailed">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3>Online Performance Evaluation</h3>
+                            <span class="feature-badge performance">Performance</span>
+                        </div>
+                        <p>Digital performance assessment system with real-time feedback and analytics</p>
+                        <div class="feature-sub-features">
+                            <div class="sub-feature">
+                                <i class="fas fa-file-contract"></i>
+                                <div>
+                                    <h4>Property Return Submission</h4>
+                                    <p>Digital submission and verification of property returns</p>
+                                </div>
+                            </div>
+                            <div class="sub-feature">
+                                <i class="fas fa-calendar-alt"></i>
+                                <div>
+                                    <h4>Leave Management</h4>
+                                    <p>Complete leave application, approval, and tracking system</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature-item-detailed">
+                        <div class="feature-header">
+                            <div class="feature-icon-detailed">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                            <h3>Goal Management</h3>
+                            <span class="feature-badge performance">Performance</span>
+                        </div>
+                        <p>Set, track, and evaluate employee goals with automated progress tracking</p>
+                        <div class="feature-highlights">
+                            <span>KPI Tracking</span>
+                            <span>Progress Monitoring</span>
+                            <span>Performance Reviews</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Attendance & Security -->
+            <div class="feature-category" data-category="attendance">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-fingerprint"></i>
+                    </div>
+                    <h2>Attendance & Security</h2>
+                    <p>Advanced attendance tracking and enterprise-grade security features</p>
+                </div>
+                <div class="features-grid-detailed">
+                    <div class="feature-item-detailed">
+                        <div class="feature-header">
+                            <div class="feature-icon-detailed">
+                                <i class="fas fa-user-clock"></i>
+                            </div>
+                            <h3>Smart Attendance</h3>
+                            <span class="feature-badge attendance">Attendance</span>
+                        </div>
+                        <p>Biometric and GPS-based attendance tracking with intelligent analytics and reporting</p>
+                        <div class="feature-highlights">
+                            <span>Biometric Integration</span>
+                            <span>GPS Tracking</span>
+                            <span>Real-time Monitoring</span>
+                            <span>Automated Reports</span>
+                        </div>
+                    </div>
+
+                    <div class="feature-item-detailed">
+                        <div class="feature-header">
+                            <div class="feature-icon-detailed">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3>Enterprise Security</h3>
+                            <span class="feature-badge security">Security</span>
+                        </div>
+                        <p>Military-grade security protocols with blockchain and multi-factor authentication</p>
+                        <div class="feature-highlights">
+                            <span>Blockchain Security</span>
+                            <span>Multi-factor Auth</span>
+                            <span>Data Encryption</span>
+                            <span>Audit Trail</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Analytics & Intelligence -->
+            <div class="feature-category" data-category="analytics">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h2>Analytics & Intelligence</h2>
+                    <p>Advanced analytics and AI-powered insights for data-driven decision making</p>
+                </div>
+                <div class="features-grid-detailed">
+                    <div class="feature-item-detailed">
+                        <div class="feature-header">
+                            <div class="feature-icon-detailed">
+                                <i class="fas fa-chart-pie"></i>
+                            </div>
+                            <h3>Advanced Analytics</h3>
+                            <span class="feature-badge analytics">Analytics</span>
+                        </div>
+                        <p>Comprehensive workforce analytics with predictive insights and visualization</p>
+                        <div class="feature-highlights">
+                            <span>Predictive Analytics</span>
+                            <span>Real-time Dashboards</span>
+                            <span>Custom Reports</span>
+                            <span>Trend Analysis</span>
+                        </div>
+                    </div>
+
+                    <div class="feature-item-detailed">
+                        <div class="feature-header">
+                            <div class="feature-icon-detailed">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h3>AI Assistant</h3>
+                            <span class="feature-badge analytics">AI Powered</span>
+                        </div>
+                        <p>Intelligent virtual assistant for HR queries and employee support</p>
+                        <div class="feature-highlights">
+                            <span>24/7 Support</span>
+                            <span>Natural Language</span>
+                            <span>Context Aware</span>
+                            <span>Multi-language</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Comparison -->
+    <section class="feature-comparison">
+        <div class="container">
+            <div class="section-header">
+                <h2>Feature Comparison</h2>
+                <p>See how our features compare to traditional HR systems</p>
+            </div>
+            <div class="comparison-table">
+                <div class="comparison-header">
+                    <div class="comparison-cell"></div>
+                    <div class="comparison-cell">Traditional System</div>
+                    <div class="comparison-cell">UP eHRMS</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-cell">Employee Onboarding</div>
+                    <div class="comparison-cell">
+                        <i class="fas fa-times-circle"></i>
+                        <span>Paper-based, 2-3 weeks</span>
+                    </div>
+                    <div class="comparison-cell">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Digital, 2-3 days</span>
+                    </div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-cell">Attendance Tracking</div>
+                    <div class="comparison-cell">
+                        <i class="fas fa-times-circle"></i>
+                        <span>Manual registers</span>
+                    </div>
+                    <div class="comparison-cell">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Biometric + GPS</span>
+                    </div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-cell">Performance Reviews</div>
+                    <div class="comparison-cell">
+                        <i class="fas fa-times-circle"></i>
+                        <span>Annual, paper-based</span>
+                    </div>
+                    <div class="comparison-cell">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Continuous, digital</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Experience These Features?</h2>
+                <p>Join thousands of government employees using our advanced HR platform</p>
+                <div class="cta-buttons">
+                    <a href="login.html" class="btn-primary large">
+                        <i class="fas fa-rocket"></i> Get Started
+                    </a>
+                    <a href="services.html" class="btn-secondary large">
+                        <i class="fas fa-play-circle"></i> Watch Demo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>UP eHRMS</h3>
+                    <p>Next-generation HR management platform powered by AI and blockchain technology.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Platform</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="features.html">Features</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Technology</h4>
+                    <ul>
+                        <li><a href="#">API Docs</a></li>
+                        <li><a href="#">GitHub</a></li>
+                        <li><a href="#">Dev Tools</a></li>
+                        <li><a href="#">SDK</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Hackathon</h4>
+                    <ul>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Submission</a></li>
+                        <li><a href="#">Demo</a></li>
+                        <li><a href="#">Presentation</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 UP eHRMS Hackathon Project. Built with <i class="fas fa-heart"></i> by Team Innovators</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/particles.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/features.js"></script>
+</body>
+</html>

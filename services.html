@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | UP eHRMS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+    
+    <!-- Header -->
+    <header class="glass">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>UP eHRMS</h1>
+                        <p>Intelligent HR Platform</p>
+                    </div>
+                </div>
+                
+                <div class="header-actions">
+                    <div class="language-selector glass">
+                        <i class="fas fa-globe"></i>
+                        <select id="languageSelect">
+                            <option value="en">EN</option>
+                            <option value="hi">HI</option>
+                        </select>
+                    </div>
+                    <a href="login.html" class="btn-login">
+                        <i class="fas fa-rocket"></i> Launch Portal
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="glass">
+        <div class="container">
+            <div class="nav-container">
+                <ul class="main-nav">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-code"></i> About</a></li>
+                    <li><a href="services.html" class="active"><i class="fas fa-cogs"></i> Services</a></li>
+                    <li><a href="#"><i class="fas fa-bolt"></i> Features</a></li>
+                    <li><a href="#"><i class="fas fa-users"></i> Team</a></li>
+                    <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Services Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="glitch" data-text="Advanced HR Services">Advanced HR Services</h1>
+                    <p>Comprehensive suite of intelligent HR solutions powered by cutting-edge technology</p>
+                </div>
+                <div class="hero-visual">
+                    <div class="service-animation">
+                        <div class="orbiting-element">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="orbiting-element">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="orbiting-element">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="services-section">
+        <div class="container">
+            <div class="services-categories">
+                <div class="category-tabs">
+                    <button class="tab-btn active" data-category="all">All Services</button>
+                    <button class="tab-btn" data-category="ai">AI Powered</button>
+                    <button class="tab-btn" data-category="core">Core HR</button>
+                    <button class="tab-btn" data-category="analytics">Analytics</button>
+                    <button class="tab-btn" data-category="security">Security</button>
+                </div>
+            </div>
+
+            <div class="services-grid-extended">
+                <!-- AI Powered Services -->
+                <div class="service-item" data-category="ai">
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI HR Assistant</h3>
+                    <p>Intelligent chatbot for instant HR queries, policy guidance, and employee support 24/7</p>
+                    <div class="service-features">
+                        <span><i class="fas fa-check"></i> Natural Language Processing</span>
+                        <span><i class="fas fa-check"></i> Contextual Understanding</span>
+                        <span><i class="fas fa-check"></i> Multi-language Support</span>
+                    </div>
+                    <div class="service-badge ai">AI Powered</div>
+                </div>
+
+                <div class="service-item" data-category="ai">
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Predictive Analytics</h3>
+                    <p>Machine learning models to predict employee turnover, performance trends, and workforce needs</p>
+                    <div class="service-features">
+                        <span><i class="fas fa-check"></i> ML Algorithms</span>
+                        <span><i class="fas fa-check"></i> Real-time Predictions</span>
+                        <span><i class="fas fa-check"></i> Custom Models</span>
+                    </div>
+                    <div class="service-badge ai">AI Powered</div>
+                </div>
+
+                <!-- Core HR Services -->
+                <div class="service-item" data-category="core">
+                    <div class="service-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Employee Profile Management</h3>
+                    <p>Centralized digital profiles with comprehensive employee information and document management</p>
+                    <div class="service-features">
+                        <span><i class="fas fa-check"></i> Digital Records</span>
+                        <span><i class="fas fa-check"></i> Document Storage</span>
+                        <span><i class="fas fa-check"></i> Self-service Updates</span>
+                    </div>
+                    <div class="service-badge core">Core HR</div>
+                </div>
+
+                <div class="service-item" data-category="core">
+                    <div class="service-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Smart Attendance</h3>
+                    <p>Biometric and GPS-based attendance tracking with intelligent leave management system</p>
+                    <div class="service-features">
+                        <span><i class="fas fa-check"></i> Biometric Integration</span>
+                        <span><i class="fas fa-check"></i> GPS Tracking</span>
+                        <span><i class="fas fa-check"></i> Auto Leave Balance</span>
+                    </div>
+                    <div class="service-badge core">Core HR</div>
+                </div>
+
+                <!-- Analytics Services -->
+                <div class="service-item" data-category="analytics">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3>HR Analytics Dashboard</h3>
+                    <p>Comprehensive analytics and visualization tools for data-driven HR decision making</p>
+                    <div class="service-features">
+                        <span><i class="fas fa-check"></i> Real-time Dashboards</span>
+                        <span><i class="fas fa-check"></i> Custom Reports</span>
+                        <span><i class="fas fa-check"></i> Export Capabilities</span>
+                    </div>
+                    <div class="service-badge analytics">Analytics</div>
+                </div>
+
+                <div class="service-item" data-category="analytics">
+                    <div class="service-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>Performance Metrics</h3>
+                    <p>Track and analyze employee performance with customizable KPIs and goal tracking</p>
+                    <div class="service-features">
+                        <span><i class="fas fa-check"></i> KPI Tracking</span>
+                        <span><i class="fas fa-check"></i> Goal Management</span>
+                        <span><i class="fas fa-check"></i> Performance Reviews</span>
+                    </div>
+                    <div class="service-badge analytics">Analytics</div>
+                </div>
+
+                <!-- Security Services -->
+                <div class="service-item" data-category="security">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Blockchain Security</h3>
+                    <p>Immutable blockchain-based record keeping for sensitive HR data and transactions</p>
+                    <div class="service-features">
+                        <span><i class="fas fa-check"></i> Immutable Records</span>
+                        <span><i class="fas fa-check"></i> Smart Contracts</span>
+                        <span><i class="fas fa-check"></i> Audit Trail</span>
+                    </div>
+                    <div class="service-badge security">Security</div>
+                </div>
+
+                <div class="service-item" data-category="security">
+                    <div class="service-icon">
+                        <i class="fas fa-fingerprint"></i>
+                    </div>
+                    <h3>Multi-factor Authentication</h3>
+                    <p>Advanced security with biometric, OTP, and hardware token based authentication</p>
+                    <div class="service-features">
+                        <span><i class="fas fa-check"></i> Biometric Auth</span>
+                        <span><i class="fas fa-check"></i> Hardware Tokens</span>
+                        <span><i class="fas fa-check"></i> OTP Verification</span>
+                    </div>
+                    <div class="service-badge security">Security</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack -->
+    <section class="tech-stack-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Powered By Cutting-Edge Technology</h2>
+                <p>Our services are built on modern, scalable technology stack</p>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <i class="fab fa-react"></i>
+                    <h4>React.js</h4>
+                    <p>Frontend Framework</p>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-node-js"></i>
+                    <h4>Node.js</h4>
+                    <p>Backend Runtime</p>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-database"></i>
+                    <h4>MongoDB</h4>
+                    <p>Database</p>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-python"></i>
+                    <h4>Python</h4>
+                    <p>AI/ML Services</p>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-link"></i>
+                    <h4>Blockchain</h4>
+                    <p>Security Layer</p>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-cloud"></i>
+                    <h4>AWS</h4>
+                    <p>Cloud Infrastructure</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your HR Operations?</h2>
+                <p>Get started with our intelligent HR platform today</p>
+                <div class="cta-buttons">
+                    <a href="login.html" class="btn-primary large">
+                        <i class="fas fa-rocket"></i> Start Free Trial
+                    </a>
+                    <a href="about.html" class="btn-secondary large">
+                        <i class="fas fa-book"></i> Read Documentation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>UP eHRMS</h3>
+                    <p>Next-generation HR management platform powered by AI and blockchain technology.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Platform</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Technology</h4>
+                    <ul>
+                        <li><a href="#">API Docs</a></li>
+                        <li><a href="#">GitHub</a></li>
+                        <li><a href="#">Dev Tools</a></li>
+                        <li><a href="#">SDK</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Hackathon</h4>
+                    <ul>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Submission</a></li>
+                        <li><a href="#">Demo</a></li>
+                        <li><a href="#">Presentation</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 UP eHRMS Hackathon Project. Built with <i class="fas fa-heart"></i> by Team Innovators</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/particles.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/services.js"></script>
+</body>
+</html>
