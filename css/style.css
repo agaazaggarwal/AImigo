@@ -24,7 +24,7 @@
 }
 
 body {
-    background-color: #000;
+   background-color: #03350f;
     color: var(--light);
     line-height: 1.6;
     overflow-x: hidden;
@@ -3518,4 +3518,5 @@ footer {
     font-size: 0.8rem;
 
 }
+
 
