@@ -24,7 +24,6 @@
 }
 
 body {
-    background-color: var(--dark);
     background-color: #000;
     color: var(--light);
     line-height: 1.6;
@@ -3519,3 +3518,4 @@ footer {
     font-size: 0.8rem;
 
 }
+
